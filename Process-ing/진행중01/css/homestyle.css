@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(12, 12, 12);
+    color: rgb(214, 213, 213);
+}
+
+.landscape {
+    background-image: url(/00_basichomepage/image/visitors-gd93843f95_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    padding-top: 56.25%;
+}
+
+.profile {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    padding: 10%;
+}
+
+.p-header, .p-section {
+    padding-bottom: 7%;
+}
+/*rgb(250, 235, 28);*/
