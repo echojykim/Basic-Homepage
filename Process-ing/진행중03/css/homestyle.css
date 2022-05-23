@@ -1,0 +1,227 @@
+body {
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    font-family: 'Pretendard-Thin';
+    color: #fce5e5;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* 네비게이션 */
+.menu * {
+    display: inline;
+}
+
+.menu li {
+    margin: 38px;
+}
+
+/*rgb(237, 237, 237) #fbe5e5;*/
+.menu li a {
+    /*메뉴 글씨색 그라데이션 기능 */
+    /*색의 그라디언트. 배경색을 투명하게 만들고 텍스트만 클립으로 따는 기능*/
+    background: linear-gradient(to right top, rgb(237, 237, 237), #ffc4ae);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*왼쪽 여백 메우기*/
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+/* 1페이지 */
+.page_one {
+    background-size: cover;
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 140px;
+}
+
+.profile {
+    border-radius: 35%;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 30%;
+}
+
+/* 2페이지 */
+.text {
+    float: right;
+    margin-top: 35px;
+    padding-left: 50px;
+}
+
+/* 3페이지 */
+h1 {
+    text-align: center;
+}
+
+.lists {
+    text-align: center;
+    font-family: 'Pretendard-Thin';
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Pretendard-Thin';
+    font-size: 18px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.list_img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 7vh 5vh;
+    margin-bottom: 50px;
+}
+
+.favorites {
+    display: inline-flex;
+    margin-top: 60px;
+}
+
+/* 4페이지 */
+.page_four {
+    text-align: center;
+    align-items: center;
+}
+
+/* 5페이지 */
+.page_five {
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-image: #34495e;
+}
+
+.join {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    padding: 30px, 20px;
+    background-image: #ffffff;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-60%, 0%);
+}
+
+.join h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.textform {
+    border-bottom: 2px solid;
+    margin: 20px;
+    padding: 0px 0px 10px
+}
+
+.id {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.password {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.username {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.email {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.nickname {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.tel {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.press {
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width: 80%;
+    height: 40px;
+    background: linear-gradient(125deg, #1e2020, #226b51, #72edc6);
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+}
+
+.press:hover {
+    background-position: right;
+}
