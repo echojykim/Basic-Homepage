@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport지정-->
+    <meta name="viewport"
+        content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0">
+    <title>김지윤 개인프로젝트 🍒</title>
+    <link rel="stylesheet" href="../00_basichomepage/css/homestyle.css">
+    <link rel="stylesheet" href="../00_basichomepage/css/scroll.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+
+<!--html4에서 사용되던 기능. body에 style선언하기. 일단 이걸로 왼쪽 빈칸을 메움-->
+<body leftmargin="0" marginwidth="0" marginheight="0">
+
+    <div class="container">
+        <header class="header">
+            <nav class="menu">
+                <ul>
+                    <li><a href="01_basicindex.html"><strong>Home</strong></a></li>
+                    <li><a href="02_introduce.html"><strong>Introduce</strong></a></li>
+                    <li><a href="03_exhibition.html"><strong>Exhibition</strong></a></li>
+                    <li><a href="04_roadmap.html"><strong>Roadmap</strong></a></li>
+                    <li><a href="05_membership.html"><strong>Membership</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--첫번째 페이지. home-->
+        <div class="list">
+            <div class="page_one">
+                <span class="profile">
+                    <img src="../00_basichomepage/image/renault-juvaquatre-gf14790ba9_1280.jpg" width="560px"
+                        height="400px" alt="">
+                    <h3><strong>Where are you guys going?</strong><br>and how's it going to end? I wish what everyone
+                        achieve to purpose in life.</h3>
+                    <!--안녕, 전 지윤입니다. / 당신들은 어디로 가고 있나요? 그리고 그건 어떻게 끝날까요? 모든 사람이 삶의 목적을 성취하길 바랍니다. -->
+                </span>
+            </div>
+        </div>
+
+        <!--두번째 페이지. 자기소개-->
+        <div class="list">
+            <div class="page_two">
+                <span class="myself">
+                    <img src="../00_basichomepage/image/bicycle-g0621031eb_1280.jpg">
+                    <h3 class="text" style="font-size: 15px;">
+                        <strong>"Optimism" is a dangerous thing from the perspective of a programmer's profession. "Feedback" is
+                        the solution. - Kent Beck</strong><br>
+                        <br>
+                        Hello, My name's Kim ji-yun! Welcome to my homepage.<br>
+                        I wandered for a long time.<br>
+                        The first was when I was a high school student, and the second was when I was a college
+                        student.<br>
+                        The third time was when I was a member of society.<br>
+                        I don't think that time is wrong.<br>
+                        I don't think I can be a great developer.<br>
+                        But I want to be a developer who can do my part.<br>
+                        There are definitely times when I feel ashamed or depressed, but I believe there will be a
+                        better tomorrow. <br>
+                        <br><br>
+                        In case I don't see ya, good afternoon, good evening, and good night! <br>
+                    </h3>
+                </span>
+            </div>
+        </div>
+
+        <!--세번째 페이지 전시회-->
+        <!--이미지 슬라이드 기능+이미지 안에 텍스트가 같이 포함된 기능을 넣고싶음...-->
+        <!--JS기능까지 한번 시도해보자-->
+        <div class="list">
+            <div class="page_three">
+                <div class="favorites">
+                    <h3>기억에 남는 전시회</h3>
+                    <div class="Slide">
+                        <div class="slider">
+                            <img src="../00_basichomepage/image/딜라이트.jpg" alt="" style="width: 550px; height:350px;">
+                            <div class="info"> 
+                                <h2>2021 딜라이트 서울</h2>
+                                <p>2020.12.18(금)~2021.10.25(월)<br>
+                                10:00~20:00 <br>
+                                안녕 인사동<br>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="list_text">기억에 남는 지난 전시회</p>
+                    </div>
+
+                    <div class="lists">
+                        <img src="" alt="">
+                        <p class="list_text">보고싶은 전시회</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--개발자 로드맵...-->
+        <!--개발자 로드맵...어떻게 만들지 고민.. 샘플 찾아볼것. 다른 기능구현할게 많음 다 하고 할수있으면 하기.-->
+        <div class="list">
+            <div class="page_four">
+                <span class="roadMap">
+                <img src="../00_basichomepage/image/Back - end (알록달록).png" style="width: 1100px; height: 465px;" alt="">
+            </span>
+          </div>
+        </div>
+
+        <!--
+- GET 사용자입력값을 url에 직렬화해서 전송함. 단순조회시 사용
+- POST 사용자 입력값을 http메시지 body에 작성(url에 노출되지 않음). 데이터 입력, 수정, 삭제 용도로 사용
+-> post를 쓰자. 상단에 일단 노출되면 안될테니까.  
+-->
+        <!--라벨이 있는 회원가입 폼이 아닌 네이버 폼의 회원가입창처럼 큼지막하게-->
+        <!--form 태그 내에 div 있어도 상관x -->
+        <div class="list">
+            <div class="page_five">
+                <form action="" class="join" method="POST">
+                    <h2>회원가입</h2>
+                    <div class="textform">
+                        <input class="id" type="text" name="userId" placeholder="아이디">
+                    </div>
+                    <div class="textform">
+                        <input class="password" type="password" name="password" placeholder="비밀번호">
+                    </div>
+                    <div class="textform">
+                        <input class="password" type="password" name="pw-confirm" placeholder="비밀번호 확인">
+                    </div>
+                    <div class="textform">
+                        <input class="username" type="text" name="username" placeholder="이름">
+                    </div>
+                    <div class="textform">
+                        <input class="email" type="email" name="email" placeholder="이메일">
+                    </div>
+                    <div class="textform">
+                        <input class="nickname" type="text" name="nickname" placeholder="닉네임">
+                    </div>
+                    <div class="textform">
+                        <input class="tel" type="tel" name="tel" placeholder="전화번호">
+                    </div>
+                    <input type="submit" class="press" value="J O I N">
+                </form>
+            </div>
+
+            <!---- <div class="list">
+      <div class="one">
+        <span class="profile"><img src="./imgs/me.jpg" width="550px;" height="550px" alt=""/></span> 
+        <h3><strong>Hello! I'm Stella.</strong> <br>You can scroll down if you want to see me more!</h3>
+      </div>
+  </div>
+
+  <div class="list">
+      <div class ="two">
+          <img class = "me" src ="./imgs/me2.jpg" alt="" width="450px;" height="500px">
+          <h3 class ="intext"> <strong>What would I lose if I learn coding?<br>Absoultely nothing!</strong><br><br>
+            Hello! I'm Stella Kim. Welcome to my homepage.<br>
+            I majored in English and worked as a hotelier in Singapore. <br>
+            After I came back to Korea, I was also in the service fields. <br>
+            But I don't want to see myself in the same industry in the few years. <br>
+            The reason I want to be a fullstack engineer is that <br>
+            there is no limits for studying and developing myself! <br>
+            Achievement is one of my motivation of my life. <br><br>
+            To be a great developer, <br>
+            achievement and developing myself constantly <br>
+            is the most important thing, I think.
+            <br><br>
+            For the future junior developer!</h3>
+      </div>
+  </div>
+  
+  <div class="list">
+      <div class="three">
+          <h1><br><br> 💕 💕 💕 </h1>
+          <div class = "favorites">
+              <div class="lists">
+                  <img class = "list_img" src="./imgs/what i love/mypet.jpg" alt="">
+                  <p class = "list_text"> 반려견 두부를 포함한<br>모든 강아지! 🐶</p>
+              </div>
+
+              <div class="lists">
+                  <img class = "list_img" src="./imgs/what i love/coffee.jpg" alt="">
+                  <p class = "list_text"> Coffee ☕</p>
+              </div>
+
+              <div class="lists">
+                  <img class = "list_img" src="./imgs/what i love/walking.jpg" alt="">
+                  <p class = "list_text"> 산책도 즐기고 🏃🏻‍♂️</p>
+              </div>
+
+              <div class="lists">
+                  <img class = "list_img" src="./imgs/what i love/traveling.jpg" alt="">
+                  <p class = "list_text"> 여행도 좋아해요! 💕</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="list">
+      <div class = "four">
+          <img class = "contact_img" src ="./imgs/bg.jpg">
+          <a href="https://velog.io/@subtitle1" class="ct">Velog</a>
+          <a href="mailto:stella.kim.96211@gmail.com" class="ct">Gmail</a>
+          <a href="https://github.com/subtitle1" class="ct">Github</a>
+      </div>
+  </div>-->
+
+            <div>
+</body>
