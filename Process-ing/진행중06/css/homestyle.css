@@ -1,0 +1,323 @@
+body {
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    font-family: 'Pretendard-Thin';
+    color: #fce5e5;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* 네비게이션 */
+.menu * {
+    display: inline;
+}
+
+.menu li {
+    margin: 38px;
+}
+
+/*rgb(237, 237, 237) #fbe5e5;*/
+.menu li a {
+    /*메뉴 글씨색 그라데이션 기능 */
+    /*색의 그라디언트. 배경색을 투명하게 만들고 텍스트만 클립으로 따는 기능*/
+    background: linear-gradient(to right top, rgb(237, 237, 237), #ffc4ae);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/*왼쪽 여백 메우기*/
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+/* 1페이지 */
+.page_one {
+    background-size: cover;
+    text-align: center;
+    padding-top: 240px;
+    padding-bottom: 140px;
+}
+
+.profile {
+    border-radius: 35%;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 30%;
+}
+
+
+/* 2페이지 */
+.page_two {
+    background-size: cover;
+    text-align: center;
+    padding-top: 350px;
+    padding-bottom: 150px;
+}
+
+.myself {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 40px;
+}
+
+.myself img{
+    max-width: 26%;
+    min-width: auto !important;
+    height: auto;
+    margin-left: 48px;
+    margin-right: auto;
+} 
+
+.text {
+    float: center;
+    margin-top: 35px;
+    padding-left: 50px;
+    font-weight: lighter;
+    color: #ffd3d0;
+}
+
+/* 3페이지 */
+/*css를 추가로 개별설정해야함. page_three margin-left-10%*/
+.page_three {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.Slider {
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider slide {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Batang', serif;
+    /*margin: 7vh 5vh;
+    margin-bottom: 50px;*/
+}
+
+.info img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*font-style: italic;*/
+}
+
+.info {
+    position: absolute;
+    color: #222;
+    background: rgb(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    transform: translate(-0%, -150%);
+}
+
+.slider .slide .info h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.slider .slide .info p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.navibtn {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    transform: 50%;
+
+}
+
+.prev, .next {
+    position: absolute;
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgb(255, 255, 255, 0.8);
+    padding: 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+.prev {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    left: 1px;
+}
+
+.next {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    right: 1px;
+}
+
+
+
+/* 4페이지 */
+.page_four {
+    text-align: center;
+    align-items: center;
+}
+
+.roadMap img {
+    margin-bottom: -110px
+}
+
+/* 5페이지 */
+.page_five {
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-image: #34495e;
+}
+
+.join {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    padding: 30px, 20px;
+    background-image: #ffffff;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-60%, 0%);
+}
+
+.join h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.textform {
+    border-bottom: 2px solid;
+    margin: 20px;
+    padding: 0px 0px 10px
+}
+
+.id {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.password {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.username {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.email {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.nickname {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.tel {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #636e72;
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.press {
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width: 80%;
+    height: 40px;
+    background: linear-gradient(125deg, #1e2020, #226b51, #72edc6);
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+}
+
+.press:hover {
+    background-position: right;
+}
