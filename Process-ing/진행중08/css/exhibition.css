@@ -1,0 +1,193 @@
+/* 3페이지 */
+/*css를 추가로 개별설정해야함. page_three margin-left-10%*/
+.page_three {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.Slider {
+    display: none;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Batang', serif;
+    /*margin: 7vh 5vh;
+    margin-bottom: 50px;*/
+}
+
+.info img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*font-style: italic;*/
+}
+
+.info {
+    position: absolute;
+    color: #222;
+    background: rgb(255, 255, 255, 0.3);
+    width: 75%;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    transform: translate(-0%, -150%);
+}
+
+.slider .slide .info h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.slider .slide .info p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.navibtn {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.prev, .next {
+    position: absolute;
+    font-size: 2em;
+    color: rgb(20, 20, 20);
+    background: rgb(255, 255, 255, 0.8);
+    padding: 7px;
+    cursor: pointer;
+    top: 50%;
+    margin-top: -22px;
+}
+
+.prev {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    left: 1px;
+}
+
+.next {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    right: 1px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+
+/* 초기화 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  */
+  /* 보여줄 구간의 높이와 넓이 설정 
+  #slideShow{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;   
+    /*리스트 형식으로 이미지를 일렬로 
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+  /*}*/
+  
+ /* 
+  .slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
+    /*transition: left 0.5s ease-out; 
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  /*}*/
+  
+  /* 첫 번째 슬라이드 가운데에 정렬하기위해
+  첫번째 슬라이드만 margin-left조정 */
+  /*.slides li:first-child{
+    margin-left: 100px;
+  }*/
+  
+  /* 슬라이드들 옆으로 정렬 */
+  /*.slides li:not(:last-child){
+    float: left;
+    margin-right: 100px;
+  }
+  
+  .slides li{
+    float: left;
+  }
+  
+  .controller span{
+    position:absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+  }*/
+  
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+  /*.controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+  
+  .prev{
+    left: 10px;
+  }
+  */
+  /* 이전 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+  /*.prev:hover{
+    transform: translateX(-10px);
+  }
+  
+  .next{
+    right: 10px;
+  }
+  
+  /* 다음 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+  /*.next:hover{
+    transform: translateX(10px);
+  }*/
