@@ -1,0 +1,231 @@
+body {
+    overflow: hidden;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    padding-top: 75%; /*화면비율 1024*768(4:3비율)*/
+}
+
+h3 {
+    font-family: 'Pretendard-Thin';
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+/* 상단바 */
+
+.navi * {
+    display: inline;
+}
+
+.navi {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+} 
+
+.navi ul {
+    padding-left: none;
+}
+
+.navi li {
+    margin: 35px;
+}
+
+.navi li a {
+    color: rgb(16, 16, 16);
+    text-decoration: none;
+}
+
+
+
+/* 1페이지 */
+
+.page_one {
+    background-size: cover;
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 130px;
+}
+
+.profile {
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0rem;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 30%;
+}
+
+/* 2페이지 */
+
+.text {
+    float: right;
+    margin-top: 35px;
+    padding-left: 50px;
+}
+
+/* 3페이지 */
+
+.lists{
+    text-align: center;
+    font-family: 'Pretendard-Thin';
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Pretendard-Thin';
+    font-size: 18px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.list_img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 7vh 5vh;
+    margin-bottom: 50px;
+}
+
+.favorites {
+    display:inline-flex;
+    margin-top: 60px;
+}
+
+/* 4페이지 */
+
+.page_four {
+    text-align: center;
+    align-items: center;
+}
+
+
+/* 5페이지 */
+
+.page_five {
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-image: #34495e;
+}
+
+.join {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    padding: 30px, 20px;
+    background-image: #ffffff;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.join h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.textform {
+    border-bottom: 2px solid;
+    padding: 10px 10px
+}
+
+.id {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.password {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.username {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.email {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.nickname {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.tel {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: #636e72;
+    font-size:16px;
+    height:25px;
+    background: none;
+}
+  
+.press {
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: linear-gradient(125deg,#1e2020,#226b51,#72edc6);
+    background-position: left;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+}
+  
+.press:hover {
+    background-position: right;
+}

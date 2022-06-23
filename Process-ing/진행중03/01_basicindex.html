@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport지정-->
+    <meta name="viewport"
+        content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0">
+    <title>김지윤 개인프로젝트 🍒</title>
+    <link rel="stylesheet" href="../10_test/css/main.css">
+    <link rel="stylesheet" href="../10_test/css/scroll.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+
+<!--html4에서 사용되던 기능. body에 style선언하기. 일단 이걸로 왼쪽 빈칸을 메움-->
+
+<body leftmargin="0" marginwidth="0" marginheight="0">
+
+    <div class="container">
+        <header class="header">
+            <nav class="menu">
+                <ul>
+                    <li><a href="01_basicindex.html"><strong>Home</strong></a></li>
+                    <li><a href="02_introduce.html"><strong>Introduce</strong></a></li>
+                    <li><a href="03_exhibition.html"><strong>Exhibition</strong></a></li>
+                    <li><a href="04_roadmap.html"><strong>Roadmap</strong></a></li>
+                    <li><a href="05_membership.html"><strong>Membership</strong></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--첫번째 페이지. home-->
+        <div class="list">
+            <div class="page_one">
+                <span class="profile">
+                    <img src="../00_basichomepage/image/renault-juvaquatre-gf14790ba9_1280.jpg" width="560px"
+                        height="400px" alt="">
+                    <h3><strong>Where are you guys going?</strong><br>and how's it going to end? I wish what everyone
+                        achieve to purpose in life.</h3>
+                    <!--안녕, 전 지윤입니다. / 당신들은 어디로 가고 있나요? 그리고 그건 어떻게 끝날까요? 모든 사람이 삶의 목적을 성취하길 바랍니다. -->
+                </span>
+            </div>
+        </div>
+
+        <!--두번째 페이지. 자기소개-->
+        <div class="list">
+            <div class="page_two">
+                <span class="myself" img src="../00_basichomepage/image/vintage-1950s-ga97ca4d03_1280.jpg" alt=""
+                    width="450px" height="500px">
+                    <h3 class="text">
+                        "Optimism" is a dangerous thing from the perspective of a programmer's profession. "Feedback" is
+                        the solution. - Kent Beck<br>
+                        <br>
+                        Hello, My name's Kim ji-yun! Welcome to my homepage.<br>
+                        I wandered for a long time.<br>
+                        The first was when I was a high school student, and the second was when I was a college
+                        student.<br>
+                        The third time was when I was a member of society.<br>
+                        I don't think that time is wrong.<br>
+                        I don't think I can be a great developer.<br>
+                        But I want to be a developer who can do my part.<br>
+                        There are definitely times when I feel ashamed or depressed, but I believe there will be a
+                        better tomorrow. <br>
+                        I hope to smile a lot when I look back on today. <br>
+                        <br><br>
+                        In case I don't see ya, good afternoon, good evening, and good night! <br>
+                        To a better tomorrow!<br>
+                    </h3>
+            </div>
+        </div>
+
+        <!--세번째 페이지 전시회-->
+        <!--이미지 슬라이드 기능+이미지 안에 텍스트가 같이 포함된 기능을 넣고싶음...-->
+        <div class="list">
+            <div class="page_three">
+                <div class="favorites">
+                    <div class="lists">
+                        <img src="" alt="">
+                        <p class="list_text">기억에 남는 지난 전시회</p>
+                    </div>
+
+                    <div class="lists">
+                        <img src="" alt="">
+                        <p class="list_text">보고싶은 전시회</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--개발자 로드맵...-->
+        <!--개발자 로드맵...어떻게 만들지 고민.. 샘플 찾아볼것. 다른 기능구현할게 많음 다 하고 할수있으면 하기.-->
+        <div class="list">
+            <div class="page_four">
+                <img class="" src="" alt="">
+            </div>
+        </div>
+
+        <!--
+- GET 사용자입력값을 url에 직렬화해서 전송함. 단순조회시 사용
+- POST 사용자 입력값을 http메시지 body에 작성(url에 노출되지 않음). 데이터 입력, 수정, 삭제 용도로 사용
+-> post를 쓰자. 상단에 일단 노출되면 안될테니까.  
+-->
+        <!--라벨이 있는 회원가입 폼이 아닌 네이버 폼의 회원가입창처럼 큼지막하게-->
+        <!--form 태그 내에 div 있어도 상관x -->
+        <div class="list">
+            <div class="page_five">
+                <form action="" class="join" method="POST">
+                    <h2>회원가입</h2>
+                    <div class="textform">
+                        <input class="id" type="text" name="userId" placeholder="아이디">
+                    </div>
+                    <div class="textform">
+                        <input class="password" type="password" name="password" placeholder="비밀번호">
+                    </div>
+                    <div class="textform">
+                        <input class="password" type="password" name="pw-confirm" placeholder="비밀번호 확인">
+                    </div>
+                    <div class="textform">
+                        <input class="username" type="text" name="username" placeholder="이름">
+                    </div>
+                    <div class="textform">
+                        <input class="email" type="email" name="email" placeholder="이메일">
+                    </div>
+                    <div class="textform">
+                        <input class="nickname" type="text" name="nickname" placeholder="닉네임">
+                    </div>
+                    <div class="textform">
+                        <input class="tel" type="tel" name="tel" placeholder="전화번호">
+                    </div>
+                    <input type="submit" class="press" value="J O I N">
+                </form>
+            </div>
+
+            <div>
+</body>
